@@ -9,7 +9,8 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-}
+ }
+ 
   
 @import "../node_modules/@angular/cdk/overlay-prebuilt.css";
 // @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
@@ -179,4 +180,10 @@ html[data-theme-mode='glassmorphism-light'] .app-sidebar .side-menu__icon {
 .theme-glassmorphism-light .app-sidebar .slide__category,
 html[data-theme-mode='glassmorphism-light'] .app-sidebar .slide__category {
   color: #1b1c1e !important;
+}
+/* Glassmorphism Light footer styling */
+.theme-glassmorphism-light .footer,
+html[data-theme-mode='glassmorphism-light'] .footer {
+  background: none !important;
+  border-top: 1px solid #edebeb !important;
 }
