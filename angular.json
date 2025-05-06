@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-        "builder": "@angular-devkit/build-angular:browser",
+        "builder": "@angular-devkit/build-angular:application",
           "options": {
             "allowedCommonJsDependencies": [
               "moment","leaflet","filepond","dropzone","apexcharts","sweetalert","sweetalert2","can-use-dom",""
