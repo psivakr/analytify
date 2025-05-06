@@ -170,3 +170,10 @@ html[data-theme-mode='glassmorphism-light'] .app-sidebar .side-menu__item.active
 html[data-theme-mode='glassmorphism-light'] .app-sidebar .side-menu__item:hover {
   background-color: rgb(198 95 95 / 10%) !important;
 }
+/* Glassmorphism Light sidebar icon active/hover fill styling */
+.theme-glassmorphism-light .app-sidebar .side-menu__item.active .side-menu__icon,
+.theme-glassmorphism-light .app-sidebar .side-menu__item:hover .side-menu__icon,
+html[data-theme-mode='glassmorphism-light'] .app-sidebar .side-menu__item.active .side-menu__icon,
+html[data-theme-mode='glassmorphism-light'] .app-sidebar .side-menu__item:hover .side-menu__icon {
+  fill: #403635 !important;
+}
