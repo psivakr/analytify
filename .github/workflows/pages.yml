@@ -1,0 +1,26 @@
+name: Pages Build and Deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  pages: write
+  id-token: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm ci
+      - run: npm run build -- --base-href=/analytify/ --output-path dist/preview
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: dist/preview
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v1
