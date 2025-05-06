@@ -2,6 +2,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./assets/css/style.css";
 @import"./assets/css/icons.css";
+
+/* Global reset to remove default body/html margin and prevent 100vh overflow scroll */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 @import "../node_modules/@angular/cdk/overlay-prebuilt.css";
 // @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import '../node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.css';
@@ -119,3 +127,25 @@ input#globalSearch {
 .main-profile-contact-list .media-icon {
     line-height: 2.3 !important;
 }
+/* Glassmorphism Light theme card styling */
+.theme-glassmorphism-light .card,
+html[data-theme-mode="glassmorphism-light"] .card {
+  background: rgb(255 255 255 / 31%) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgb(255 255 255 / 35%) !important;
+} 
+/* Glassmorphism Light body background image */  
+html[data-theme-mode='glassmorphism-light'] body {  
+  background-image: url(https://xamplify.co/assets/images/glassmorphism-images/glassmorphism.png) !important;  
+  background-repeat: no-repeat !important;  
+  background-attachment: fixed;
+  background-size: cover !important; 
+} 
+ 
+/* Glassmorphism Light header and page-header styling */ 
+html[data-theme-mode='glassmorphism-light'] .app-header, 
+html[data-theme-mode='glassmorphism-light'] .page-header { 
+  background: none !important; 
+}
+ECHO_TEST 
+TEST2 
