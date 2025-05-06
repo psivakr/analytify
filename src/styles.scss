@@ -163,3 +163,10 @@ html[data-theme-mode='glassmorphism-light'] .app-sidebar .main-sidebar-header {
 html[data-theme-mode='glassmorphism-light'] .app-sidebar .side-menu__label {
   color: #403635 !important;
 }
+/* Glassmorphism Light sidebar menu item active/hover styling */
+.theme-glassmorphism-light .app-sidebar .side-menu__item.active,
+.theme-glassmorphism-light .app-sidebar .side-menu__item:hover,
+html[data-theme-mode='glassmorphism-light'] .app-sidebar .side-menu__item.active,
+html[data-theme-mode='glassmorphism-light'] .app-sidebar .side-menu__item:hover {
+  background-color: rgb(198 95 95 / 10%) !important;
+}
