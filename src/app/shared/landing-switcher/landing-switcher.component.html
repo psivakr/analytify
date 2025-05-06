@@ -26,6 +26,14 @@
                         <input class="form-check-input" type="radio" name="theme-style" id="switcher-dark-theme" (click)="themeChange('dark','dark')" checked>
                     </div>
                 </div>
+                <div class="col-4">
+                    <div class="form-check switch-select">
+                        <label class="form-check-label" for="switcher-glassmorphism-light">
+                            Glassmorphism Light
+                        </label>
+                        <input class="form-check-input" type="radio" name="theme-style" id="switcher-glassmorphism-light" (click)="themeChange('glassmorphism-light','glassmorphism-light')" [checked]="localDark['vexel-theme-mode']=='glassmorphism-light'">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="">
