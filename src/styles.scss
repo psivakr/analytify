@@ -147,5 +147,11 @@ html[data-theme-mode='glassmorphism-light'] .app-header,
 html[data-theme-mode='glassmorphism-light'] .page-header { 
   background: none !important; 
 }
-ECHO_TEST 
-TEST2 
+/* Glassmorphism Light sidebar styling */
+.theme-glassmorphism-light .app-sidebar {
+  background: none !important;
+  border-color: #edebeb !important;
+}
+.theme-glassmorphism-light .app-sidebar .main-sidebar-header {
+  background: none !important;
+}
