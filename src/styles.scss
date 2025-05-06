@@ -10,6 +10,7 @@ html, body {
   height: 100%;
   width: 100%;
 }
+  
 @import "../node_modules/@angular/cdk/overlay-prebuilt.css";
 // @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import '../node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.css';
@@ -148,14 +149,17 @@ html[data-theme-mode='glassmorphism-light'] .page-header {
   background: none !important; 
 }
 /* Glassmorphism Light sidebar styling */
-.theme-glassmorphism-light .app-sidebar {
+.theme-glassmorphism-light .app-sidebar,
+html[data-theme-mode='glassmorphism-light'] .app-sidebar {
   background: none !important;
   border-color: #edebeb !important;
 }
-.theme-glassmorphism-light .app-sidebar .main-sidebar-header {
+.theme-glassmorphism-light .app-sidebar .main-sidebar-header,
+html[data-theme-mode='glassmorphism-light'] .app-sidebar .main-sidebar-header {
   background: none !important;
 }
 /* Glassmorphism Light sidebar label styling */
-.theme-glassmorphism-light .app-sidebar .side-menu__label {
+.theme-glassmorphism-light .app-sidebar .side-menu__label,
+html[data-theme-mode='glassmorphism-light'] .app-sidebar .side-menu__label {
   color: #403635 !important;
 }
