@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "sass": "sass ./src/assets/scss:./src/assets/css/",
-    "sass-min": "sass ./src/assets/scss:./src/assets/css/ --style compressed"
+    "sass-min": "sass ./src/assets/scss:./src/assets/css/ --style compressed",
+    "predeploy": "ng build --configuration production --base-href /analytify/ --output-path dist/preview",
+    "deploy": "npx angular-cli-ghpages --dir=dist/preview --repo=https://$GH_TOKEN@github.com/psivakr/analytify.git"
   },
   "private": true,
   "dependencies": {
