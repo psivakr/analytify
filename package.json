@@ -9,7 +9,8 @@
     "test": "ng test",
     "sass": "sass ./src/assets/scss:./src/assets/css/",
     "sass-min": "sass ./src/assets/scss:./src/assets/css/ --style compressed",
-    "predeploy": "ng build --configuration production --base-href /analytify/ --output-path dist/preview",
+    "postbuild-404": "cp src/404.html dist/preview/404.html",
+    "predeploy": "ng build --configuration production --base-href /analytify/ --output-path dist/preview && npm run postbuild-404",
     "deploy": "npm run predeploy && npx angular-cli-ghpages --dir=dist/preview --repo=https://$GH_TOKEN@github.com/psivakr/analytify.git"
   },
   "private": true,
