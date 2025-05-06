@@ -187,3 +187,8 @@ html[data-theme-mode='glassmorphism-light'] .footer {
   background: none !important;
   border-top: 1px solid #edebeb !important;
 }
+/* Glassmorphism Light sidebar menu item text styling */
+.theme-glassmorphism-light .app-sidebar .side-menu__item,
+html[data-theme-mode='glassmorphism-light'] .app-sidebar .side-menu__item {
+  color: #665c5c !important;
+}
